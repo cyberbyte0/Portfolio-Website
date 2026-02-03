@@ -1,0 +1,178 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <meta name="description" content="Portfolio of Fareed Akram, specializing in security research, API testing, and automation.">
+  
+  <!-- Open Graph / Social Preview -->
+  <meta property="og:title" content="Fareed Akram — Portfolio">
+  <meta property="og:description" content="Explore my projects and experience in security and development.">
+  <meta property="og:image" content="https://yourdomain.com/assets/avatar.jpg">
+  <meta property="og:type" content="website">
+
+  <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon-16x16.png">
+
+  <title>Fareed Akram — Portfolio</title>
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&family=Poppins:wght@600&display=swap" rel="stylesheet">
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="styles.css">
+
+  <!-- Content Security Policy -->
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline'; img-src 'self' data:; font-src 'self' https://fonts.gstatic.com;">
+</head>
+<body>
+
+  <header class="site-header" role="banner">
+    <div class="container header-inner">
+      <div class="brand">
+        <a href="index.html" class="logo">
+          <span class="logo-mark" aria-hidden="true"></span>
+          <span class="logo-text">Fareed Akram</span>
+        </a>
+      </div>
+
+      <nav class="nav" role="navigation" aria-label="Main Navigation">
+        <ul>
+          <li><a href="index.html" class="nav-link active">Home</a></li>
+          <li><a href="experience.html" class="nav-link">Experience</a></li>
+          <li><a href="skills.html" class="nav-link">Skills</a></li>
+          <li><a href="projects.html" class="nav-link">Projects</a></li>
+          <li><a href="security-research.html" class="nav-link">Security Research</a></li>
+          <li><a href="blog.html" class="nav-link">Blog</a></li>
+          <li><a href="contact.html" class="nav-link">Contact</a></li>
+        </ul>
+      </nav>
+
+      <div class="controls">
+        <button id="themeToggle" class="theme-btn" aria-label="Toggle dark/light theme">
+          <div class="theme-icon-box">
+            <svg class="icon-sun" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="5"></circle><line x1="12" y1="1" x2="12" y2="3"></line><line x1="12" y1="21" x2="12" y2="23"></line><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line><line x1="1" y1="12" x2="3" y2="12"></line><line x1="21" y1="12" x2="23" y2="12"></line><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line></svg>
+            <svg class="icon-moon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path></svg>
+          </div>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main id="main" role="main">
+    <!-- Hero Section -->
+    <section class="hero">
+      <div class="container hero-grid">
+        <div class="hero-left">
+          <h1 class="title">Hi, I'm <span class="accent">Fareed</span></h1>
+          <div class="sub">
+            <span id="typing" class="typing" aria-hidden="true"></span>
+            <noscript>
+              <span class="typing-fallback">
+                Security Analyst • API Pentester • Automation & Reverse Engineering
+              </span>
+            </noscript>
+          </div>
+          <p class="lead">
+            B.Tech graduate and Security Analyst specialized in API testing, automation with Playwright,
+            and DRM reverse engineering. I find vulnerabilities and write repeatable tools & SOPs to improve security.
+          </p>
+
+          <div class="cta-row">
+            <a class="btn primary" href="projects.html" aria-label="View my projects">View Projects</a>
+            <a class="btn outline" href="mailto:mfareedakram0@gmail.com" aria-label="Send me an email">Contact Me</a> 
+          </div>
+
+          <div class="badges">
+            <span class="badge">API Security</span>
+            <span class="badge">Automation</span>
+            <span class="badge">DRM Reversing</span>
+          </div>
+        </div>
+
+        <div class="hero-right">
+          <div class="profile-card">
+            <div class="floating-shapes" aria-hidden="true">
+              <span class="shape s1"></span>
+              <span class="shape s2"></span>
+              <span class="shape s3"></span>
+            </div>
+            <img src="assets/avatar.jpg" alt="Portrait of Fareed Akram" class="avatar" width="140" height="140" loading="lazy">
+            <div class="profile-info">
+              <h3>Fareed Akram</h3>
+              <p class="muted">Security Analyst • Bengaluru / Adoni</p>
+              <div class="contact-links">
+                <a href="mailto:mfareedakram0@gmail.com">mfareedakram0@gmail.com</a>
+                <a href="https://github.com/cyberbyte0" target="_blank" rel="noopener noreferrer">github.com/cyberbyte0</a>
+                <a href="https://www.linkedin.com/in/fareed-akram-m" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <svg class="hero-wave" viewBox="0 0 1440 100" preserveAspectRatio="none" aria-hidden="true" role="presentation">
+        <path d="M0,30 C200,90 400,0 720,40 C1040,80 1240,20 1440,40 L1440 100 L0 100 Z"></path>
+      </svg>
+    </section>
+
+    <!-- What I Do Section -->
+    <section class="how container fade-up">
+      <h2>What I do</h2>
+      <div class="grid-3">
+        <article class="card">
+          <h3>API Security Testing</h3>
+          <p>Deep-dive testing aligned with the OWASP API Top 10, using Burp Suite & Postman to find high impact issues.</p>
+        </article>
+        <article class="card">
+          <h3>Automation & Threat Simulation</h3>
+          <p>Playwright automation with stealth techniques — OTP flows, CAPTCHA handling, and realistic client simulation.</p>
+        </article>
+        <article class="card">
+          <h3>Reverse Engineering</h3>
+          <p>DRM & mobile app analysis using Frida/Objection to inspect key handling and license flows.</p>
+        </article>
+      </div>
+    </section>
+
+    <!-- Achievements Section -->
+    <section class="features container fade-up">
+      <h2>Highlighted Achievements</h2>
+      <div class="grid-3">
+        <div class="stat-card">
+          <div class="stat">SOP</div>
+          <p>Built a formal SOP for bug triage & reporting to streamline remediation.</p>
+        </div>
+        <div class="stat-card">
+          <div class="stat">Automation</div>
+          <p>Multi-iteration account creation scripts with temp email handling & CAPTCHA strategies.</p>
+        </div>
+        <div class="stat-card">
+          <div class="stat">DRM Insights</div>
+          <p>Captured CKC flows and analyzed weak key management in streaming apps.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer Call-to-Action -->
+    <section class="footer-cta container fade-up">
+      <div class="cta">
+        <h3>Want to collaborate or hire?</h3>
+        <a class="btn primary large" href="contact.html">Let's talk</a>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="site-footer" role="contentinfo">
+    <div class="container">
+      <p>© 2025 Fareed Akram • <a href="https://github.com/cyberbyte0" target="_blank" rel="noopener noreferrer">GitHub</a> • <a href="https://www.linkedin.com/in/fareed-akram-m" target="_blank" rel="noopener noreferrer">LinkedIn</a></p>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <canvas id="matrix-bg"></canvas>
+  <script src="script.js" defer></script>
+</body>
+</html>

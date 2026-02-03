@@ -1,0 +1,115 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <meta name="description" content="Fareed Akram — Professional experience in API Security, Automation, and Reverse Engineering.">
+
+  <!-- Open Graph / Social Preview -->
+  <meta property="og:title" content="Fareed Akram — Experience">
+  <meta property="og:description" content="Explore Fareed Akram's professional experience in security analysis, automation, and reverse engineering.">
+  <meta property="og:image" content="https://yourdomain.com/assets/avatar.jpg">
+  <meta property="og:type" content="website">
+
+  <link rel="icon" type="image/png" href="assets/favicon.png">
+
+  <title>Experience — Fareed Akram</title>
+  
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&family=Poppins:wght@600&display=swap" rel="stylesheet">
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="styles.css">
+
+  <!-- Content Security Policy -->
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; img-src 'self' data:; font-src 'self' https://fonts.gstatic.com;">
+</head>
+<body>
+  <!-- Removing the skip to content link -->
+  
+  <!-- Header -->
+  <header class="site-header" role="banner">
+    <div class="container header-inner">
+      <div class="brand">
+        <a href="index.html" class="logo">
+          <span class="logo-mark" aria-hidden="true"></span>
+          <span class="logo-text">Fareed Akram</span>
+        </a>
+      </div>
+
+      <nav class="nav" role="navigation" aria-label="Main Navigation">
+        <ul>
+          <li><a href="index.html" class="nav-link">Home</a></li>
+          <li><a href="experience.html" class="nav-link active">Experience</a></li>
+          <li><a href="skills.html" class="nav-link">Skills</a></li>
+          <li><a href="projects.html" class="nav-link">Projects</a></li>
+          <li><a href="security-research.html" class="nav-link">Security Research</a></li>
+          <li><a href="blog.html" class="nav-link">Blog</a></li>
+          <li><a href="contact.html" class="nav-link">Contact</a></li>
+        </ul>
+      </nav>
+
+      <div class="controls">
+        <button id="themeToggleExperience" class="theme-btn" aria-label="Toggle dark/light theme">
+          <div class="theme-icon-box">
+            <svg class="icon-sun" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="5"></circle><line x1="12" y1="1" x2="12" y2="3"></line><line x1="12" y1="21" x2="12" y2="23"></line><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line><line x1="1" y1="12" x2="3" y2="12"></line><line x1="21" y1="12" x2="23" y2="12"></line><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line></svg>
+            <svg class="icon-moon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path></svg>
+          </div>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Main Content -->
+  <main id="main" role="main">
+    <section class="container fade-up">
+      <h1>Experience</h1>
+      <p class="muted">A snapshot of my professional journey, highlighting roles in security, automation, and engineering.</p>
+
+      <!-- Job Cards -->
+      <article class="job-card">
+        <div class="job-head">
+          <h2>Security Analyst — Dailyrounds / Marrow</h2>
+          <p class="muted">Apr 2024 — Present • Bengaluru, India</p>
+        </div>
+        <ul class="job-list">
+          <li>API Security Testing & Vulnerability Discovery (OWASP API Top 10).</li>
+          <li>Automation scripts using Playwright (CAPTCHA, OTP flows, IP rotation).</li>
+          <li>Reverse engineering DRM apps with Frida & Objection to inspect key handling.</li>
+          <li>Developed SOP for bug triage and reporting to streamline remediation.</li>
+          <li>Authored detailed security test cases and OWASP mapping in Excel.</li>
+        </ul>
+      </article>
+
+      <article class="job-card">
+        <div class="job-head">
+          <h2>Maintenance & Engineering Technician — Shankar Electrical (SESIPL)</h2>
+          <p class="muted">Jun 2024 — Mar 2025 • Bengaluru, India</p>
+        </div>
+        <ul class="job-list">
+          <li>Routine and preventive maintenance of Diesel Generators.</li>
+          <li>Implemented safety protocols and collaborated on process improvements.</li>
+        </ul>
+      </article>
+
+      <article class="job-card">
+        <div class="job-head">
+          <h2>Assistant Jr. Linemen — AP SPDCL (Intern)</h2>
+          <p class="muted">Sep 2021 — Jan 2022 • Adoni, India</p>
+        </div>
+        <p>Field work with 33/11 KV substations, distribution network exposure, and hands-on operational experience.</p>
+      </article>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="site-footer" role="contentinfo">
+    <div class="container">
+      <p>© 2025 Fareed Akram • <a href="https://github.com/cyberbyte0" target="_blank" rel="noopener noreferrer">GitHub</a> • <a href="https://www.linkedin.com/in/fareed-akram-m" target="_blank" rel="noopener noreferrer">LinkedIn</a></p>
+    </div>
+  </footer>
+
+  <canvas id="matrix-bg"></canvas>
+  <script src="script.js" defer></script>
+</body>
+</html>

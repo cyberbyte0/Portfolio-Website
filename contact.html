@@ -1,0 +1,106 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <meta name="description" content="Contact Fareed Akram – Security Analyst & API Pentester. Reach out for collaborations, questions, or hiring.">
+
+  <!-- Open Graph / Social Preview -->
+  <meta property="og:title" content="Fareed Akram — Contact">
+  <meta property="og:description" content="Reach out to Fareed Akram for collaborations, security research, or consulting.">
+  <meta property="og:image" content="https://yourdomain.com/assets/avatar.jpg">
+  <meta property="og:type" content="website">
+
+  <link rel="icon" type="image/png" href="assets/favicon.png">
+  <title>Contact — Fareed Akram</title>
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&family=Poppins:wght@600&display=swap" rel="stylesheet">
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="styles.css">
+
+  <!-- Content Security Policy -->
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; img-src 'self' data:; font-src 'self' https://fonts.gstatic.com;">
+</head>
+<body>
+  <!-- Removing the skip to content link -->
+  
+  <!-- Header -->
+  <header class="site-header" role="banner">
+    <div class="container header-inner">
+      <div class="brand">
+        <a href="index.html" class="logo">
+          <span class="logo-mark" aria-hidden="true"></span>
+          <span class="logo-text">Fareed Akram</span>
+        </a>
+      </div>
+
+      <nav class="nav" role="navigation" aria-label="Main Navigation">
+        <ul>
+          <li><a href="index.html" class="nav-link">Home</a></li>
+          <li><a href="experience.html" class="nav-link">Experience</a></li>
+          <li><a href="skills.html" class="nav-link">Skills</a></li>
+          <li><a href="projects.html" class="nav-link">Projects</a></li>
+          <li><a href="security-research.html" class="nav-link">Security Research</a></li>
+          <li><a href="blog.html" class="nav-link">Blog</a></li>
+          <li><a href="contact.html" class="nav-link active">Contact</a></li>
+        </ul>
+      </nav>
+
+      <div class="controls">
+        <button id="themeToggleContact" class="theme-btn" aria-label="Toggle dark/light theme">
+          <div class="theme-icon-box">
+            <svg class="icon-sun" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="5"></circle><line x1="12" y1="1" x2="12" y2="3"></line><line x1="12" y1="21" x2="12" y2="23"></line><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line><line x1="1" y1="12" x2="3" y2="12"></line><line x1="21" y1="12" x2="23" y2="12"></line><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line></svg>
+            <svg class="icon-moon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path></svg>
+          </div>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Main Content -->
+  <main id="main" role="main">
+    <section class="container fade-up">
+      <h1>Contact</h1>
+      <p class="muted">Want to work together or have a question? Use the quick email form below.</p>
+
+      <div class="contact-grid">
+        <!-- Contact Form -->
+        <form class="contact-form" action="mailto:mfareedakram0@gmail.com" method="GET" enctype="text/plain" onsubmit="return confirm('This will open your email client to send the message. Continue?')">
+          <label>
+            <span>Your Name / Subject</span>
+            <input type="text" name="subject" placeholder="Your name / subject" required>
+          </label>
+          <label>
+            <span>Message</span>
+            <textarea name="body" rows="6" placeholder="Write a short message..." required></textarea>
+          </label>
+          <div class="form-actions">
+            <button type="submit" class="btn primary">Send Email</button>
+            <a class="btn ghost" href="mailto:mfareedakram0@gmail.com">Open Mail Client</a>
+          </div>
+        </form>
+
+        <!-- Contact Info -->
+        <aside class="contact-card">
+          <h3>Quick Contact</h3>
+          <p><strong>Email</strong><br><a href="mailto:mfareedakram0@gmail.com">mfareedakram0@gmail.com</a></p>
+          <p><strong>GitHub</strong><br><a href="https://github.com/cyberbyte0" target="_blank" rel="noopener noreferrer">github.com/cyberbyte0</a></p>
+          <p><strong>Location</strong><br>Adoni, India</p>
+        </aside>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="site-footer" role="contentinfo">
+    <div class="container">
+      <p>© 2025 Fareed Akram • <a href="https://github.com/cyberbyte0" target="_blank" rel="noopener noreferrer">GitHub</a> • <a href="https://www.linkedin.com/in/fareed-akram-m" target="_blank" rel="noopener noreferrer">LinkedIn</a></p>
+    </div>
+  </footer>
+
+  <canvas id="matrix-bg"></canvas>
+  <script src="script.js" defer></script>
+</body>
+</html>
