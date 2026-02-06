@@ -7,7 +7,6 @@ A professional, high-performance portfolio website built with vanilla HTML5, CSS
 - **Interactive Theme Engine**: Custom-built sun/moon animation with a bouncy spring physics transition and local storage persistence.
 - **Dynamic Matrix Background**: Optimized Canvas-based Matrix rain animation that adapts dynamically to light/dark themes.
 - **Micro-interactions**: Glassmorphism effects, modern hover "glow" states, and smooth lift transitions for all project cards.
-- **Project Filtering**: Functional JS-based categorization (Security, Automation, Academic) for streamlined navigation.
 - **Custom Error Handling**: Theme-integrated `404.html` with Matrix background and a dedicated "Return Home" path.
 - **Performance Optimized**: Zero external dependencies (excluding fonts/analytics), minimal layout shifts (CLS), and optimized SVG rendering.
 - **SEO & Discoverability**: Semantic HTML5 structure, integrated sitemap.xml, and robots.txt for professional search engine indexing.

@@ -245,27 +245,4 @@ document.addEventListener("DOMContentLoaded", () => {
       }, { once: true });
     }
   }
-
-  /* Project Filtering (if needed) */
-  const projectFilters = document.querySelectorAll('.project-filter');
-  if (projectFilters.length > 0) {
-    projectFilters.forEach(filter => {
-      filter.addEventListener('click', function () {
-        const category = this.getAttribute('data-filter');
-
-        // Update active filter
-        projectFilters.forEach(f => f.classList.remove('active'));
-        this.classList.add('active');
-
-        // Filter projects
-        document.querySelectorAll('.project-card').forEach(card => {
-          if (category === 'all' || card.getAttribute('data-category') === category) {
-            card.style.display = 'flex';
-          } else {
-            card.style.display = 'none';
-          }
-        });
-      });
-    });
-  }
 });
