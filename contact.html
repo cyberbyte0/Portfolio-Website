@@ -1,31 +1,48 @@
 <!doctype html>
 <html lang="en">
+
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <meta name="description" content="Contact Fareed Akram – Security Analyst & API Pentester. Reach out for collaborations, questions, or hiring.">
+  <meta name="description"
+    content="Contact Fareed Akram – Security Analyst & API Pentester. Reach out for collaborations, questions, or hiring.">
 
   <!-- Open Graph / Social Preview -->
   <meta property="og:title" content="Fareed Akram — Contact">
-  <meta property="og:description" content="Reach out to Fareed Akram for collaborations, security research, or consulting.">
+  <meta property="og:description"
+    content="Reach out to Fareed Akram for collaborations, security research, or consulting.">
   <meta property="og:image" content="https://yourdomain.com/assets/avatar.jpg">
   <meta property="og:type" content="website">
 
   <link rel="icon" type="image/png" href="assets/favicon.png">
+  <meta name="theme-color" content="#eef2f6" media="(prefers-color-scheme: light)">
+  <meta name="theme-color" content="#071025" media="(prefers-color-scheme: dark)">
   <title>Contact — Fareed Akram</title>
 
   <!-- Google Fonts -->
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&family=Poppins:wght@600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&family=Poppins:wght@600&display=swap"
+    rel="stylesheet">
 
   <!-- CSS -->
   <link rel="stylesheet" href="styles.css">
 
   <!-- Content Security Policy -->
-  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; img-src 'self' data:; font-src 'self' https://fonts.gstatic.com;">
+  <meta http-equiv="Content-Security-Policy"
+    content="default-src 'self'; script-src 'self' https://www.googletagmanager.com; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; img-src 'self' data:; font-src 'self' https://fonts.gstatic.com; connect-src 'self' https://www.google-analytics.com;">
+
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-9109JW4ZJP"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+    gtag('config', 'G-9109JW4ZJP');
+  </script>
 </head>
+
 <body>
   <!-- Removing the skip to content link -->
-  
+
   <!-- Header -->
   <header class="site-header" role="banner">
     <div class="container header-inner">
@@ -51,8 +68,22 @@
       <div class="controls">
         <button id="themeToggleContact" class="theme-btn" aria-label="Toggle dark/light theme">
           <div class="theme-icon-box">
-            <svg class="icon-sun" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="5"></circle><line x1="12" y1="1" x2="12" y2="3"></line><line x1="12" y1="21" x2="12" y2="23"></line><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line><line x1="1" y1="12" x2="3" y2="12"></line><line x1="21" y1="12" x2="23" y2="12"></line><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line></svg>
-            <svg class="icon-moon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path></svg>
+            <svg class="icon-sun" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"
+              stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <circle cx="12" cy="12" r="5"></circle>
+              <line x1="12" y1="1" x2="12" y2="3"></line>
+              <line x1="12" y1="21" x2="12" y2="23"></line>
+              <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+              <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+              <line x1="1" y1="12" x2="3" y2="12"></line>
+              <line x1="21" y1="12" x2="23" y2="12"></line>
+              <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+              <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+            </svg>
+            <svg class="icon-moon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"
+              stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+            </svg>
           </div>
         </button>
       </div>
@@ -67,27 +98,70 @@
 
       <div class="contact-grid">
         <!-- Contact Form -->
-        <form class="contact-form" action="mailto:mfareedakram0@gmail.com" method="GET" enctype="text/plain" onsubmit="return confirm('This will open your email client to send the message. Continue?')">
-          <label>
-            <span>Your Name / Subject</span>
-            <input type="text" name="subject" placeholder="Your name / subject" required>
-          </label>
-          <label>
-            <span>Message</span>
-            <textarea name="body" rows="6" placeholder="Write a short message..." required></textarea>
-          </label>
+        <form class="contact-form" action="mailto:akramfareed.m@gmail.com" method="GET" enctype="text/plain"
+          onsubmit="return confirm('This will open your email client to send the message. Continue?')">
+          <div class="form-group">
+            <label class="form-label">Your Name / Subject</label>
+            <input type="text" name="subject" class="form-control" placeholder="Your name / subject" required>
+          </div>
+          <div class="form-group">
+            <label class="form-label">Message</label>
+            <textarea name="body" class="form-control" rows="6" placeholder="Write a short message..."
+              required></textarea>
+          </div>
           <div class="form-actions">
             <button type="submit" class="btn primary">Send Email</button>
-            <a class="btn ghost" href="mailto:mfareedakram0@gmail.com">Open Mail Client</a>
+            <a class="btn ghost" href="mailto:akramfareed.m@gmail.com">Open Mail Client</a>
           </div>
         </form>
 
         <!-- Contact Info -->
         <aside class="contact-card">
           <h3>Quick Contact</h3>
-          <p><strong>Email</strong><br><a href="mailto:mfareedakram0@gmail.com">mfareedakram0@gmail.com</a></p>
-          <p><strong>GitHub</strong><br><a href="https://github.com/cyberbyte0" target="_blank" rel="noopener noreferrer">github.com/cyberbyte0</a></p>
-          <p><strong>Location</strong><br>Adoni, India</p>
+
+          <div class="contact-method">
+            <div class="contact-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none"
+                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                <polyline points="22,6 12,13 2,6"></polyline>
+              </svg>
+            </div>
+            <div>
+              <strong>Email</strong><br>
+              <a href="mailto:mfareedakram0@gmail.com">mfareedakram0@gmail.com</a>
+            </div>
+          </div>
+
+          <div class="contact-method">
+            <div class="contact-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none"
+                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path
+                  d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22">
+                </path>
+              </svg>
+            </div>
+            <div>
+              <strong>GitHub</strong><br>
+              <a href="https://github.com/cyberbyte0" target="_blank"
+                rel="noopener noreferrer">github.com/cyberbyte0</a>
+            </div>
+          </div>
+
+          <div class="contact-method">
+            <div class="contact-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none"
+                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                <circle cx="12" cy="10" r="3"></circle>
+              </svg>
+            </div>
+            <div>
+              <strong>Location</strong><br>
+              Bangalore, India
+            </div>
+          </div>
         </aside>
       </div>
     </section>
@@ -96,11 +170,14 @@
   <!-- Footer -->
   <footer class="site-footer" role="contentinfo">
     <div class="container">
-      <p>© 2025 Fareed Akram • <a href="https://github.com/cyberbyte0" target="_blank" rel="noopener noreferrer">GitHub</a> • <a href="https://www.linkedin.com/in/fareed-akram-m" target="_blank" rel="noopener noreferrer">LinkedIn</a></p>
+      <p>© 2026 Fareed Akram • <a href="https://github.com/cyberbyte0" target="_blank"
+          rel="noopener noreferrer">GitHub</a> • <a href="https://www.linkedin.com/in/fareed-akram-m" target="_blank"
+          rel="noopener noreferrer">LinkedIn</a></p>
     </div>
   </footer>
 
   <canvas id="matrix-bg"></canvas>
   <script src="script.js" defer></script>
 </body>
+
 </html>

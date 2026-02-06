@@ -1,27 +1,44 @@
 <!doctype html>
 <html lang="en">
+
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <meta name="description" content="Fareed Akram — Core skills in API security, automation, reverse engineering, and cybersecurity tooling.">
+  <meta name="description"
+    content="Fareed Akram — Core skills in API security, Android application analysis, ADB automation, and cybersecurity tooling.">
 
   <!-- Open Graph / Social Preview -->
   <meta property="og:title" content="Fareed Akram — Skills">
-  <meta property="og:description" content="Expertise in API Security, Automation, Reverse Engineering, Python, and Networking.">
+  <meta property="og:description"
+    content="Expertise in API Security, Android Static & Dynamic Analysis, ADB Automation, Python, and Networking.">
   <meta property="og:image" content="https://yourdomain.com/assets/avatar.jpg">
   <meta property="og:type" content="website">
 
   <title>Skills — Fareed Akram</title>
 
   <link rel="icon" type="image/png" href="assets/favicon.png">
+  <meta name="theme-color" content="#eef2f6" media="(prefers-color-scheme: light)">
+  <meta name="theme-color" content="#071025" media="(prefers-color-scheme: dark)">
   <link rel="stylesheet" href="styles.css">
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&family=Poppins:wght@600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&family=Poppins:wght@600&display=swap"
+    rel="stylesheet">
 
-  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; img-src 'self' data:; font-src 'self' https://fonts.gstatic.com;">
+  <meta http-equiv="Content-Security-Policy"
+    content="default-src 'self'; script-src 'self' https://www.googletagmanager.com; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; img-src 'self' data:; font-src 'self' https://fonts.gstatic.com; connect-src 'self' https://www.google-analytics.com;">
+
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-9109JW4ZJP"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+    gtag('config', 'G-9109JW4ZJP');
+  </script>
 </head>
+
 <body>
   <!-- Removing the skip to content link -->
-  
+
   <!-- Header -->
   <header class="site-header" role="banner">
     <div class="container header-inner">
@@ -47,8 +64,22 @@
       <div class="controls">
         <button id="themeToggle3" class="theme-btn" aria-label="Toggle dark/light theme">
           <div class="theme-icon-box">
-            <svg class="icon-sun" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="5"></circle><line x1="12" y1="1" x2="12" y2="3"></line><line x1="12" y1="21" x2="12" y2="23"></line><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line><line x1="1" y1="12" x2="3" y2="12"></line><line x1="21" y1="12" x2="23" y2="12"></line><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line></svg>
-            <svg class="icon-moon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path></svg>
+            <svg class="icon-sun" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"
+              stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <circle cx="12" cy="12" r="5"></circle>
+              <line x1="12" y1="1" x2="12" y2="3"></line>
+              <line x1="12" y1="21" x2="12" y2="23"></line>
+              <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+              <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+              <line x1="1" y1="12" x2="3" y2="12"></line>
+              <line x1="21" y1="12" x2="23" y2="12"></line>
+              <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+              <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+            </svg>
+            <svg class="icon-moon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"
+              stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+            </svg>
           </div>
         </button>
       </div>
@@ -66,37 +97,31 @@
         <div class="skill-card">
           <h3>API Security</h3>
           <p>OWASP API Top 10, Burp Suite, Postman</p>
-          <div class="bar"><span class="bar-fill" data-fill="90" aria-label="API Security 90%"></span></div>
         </div>
 
         <div class="skill-card">
-          <h3>Automation</h3>
-          <p>Playwright, scripting, data-driven tests</p>
-          <div class="bar"><span class="bar-fill" data-fill="85" aria-label="Automation 85%"></span></div>
+          <h3>ADB Automation</h3>
+          <p>ADB commands, automated device interaction, security script execution</p>
         </div>
 
         <div class="skill-card">
-          <h3>Reverse Engineering</h3>
-          <p>Frida, Objection, binary inspection</p>
-          <div class="bar"><span class="bar-fill" data-fill="80" aria-label="Reverse Engineering 80%"></span></div>
+          <h3>Android App Analysis</h3>
+          <p>Static (JADX, Ghidra) & Dynamic (Frida, Objection) analysis</p>
         </div>
 
         <div class="skill-card">
           <h3>Networking & Infra</h3>
           <p>Linux, Git, Packet Tracer basics</p>
-          <div class="bar"><span class="bar-fill" data-fill="75" aria-label="Networking 75%"></span></div>
         </div>
 
         <div class="skill-card">
           <h3>Python</h3>
           <p>Automation scripts, parsing, tooling</p>
-          <div class="bar"><span class="bar-fill" data-fill="88" aria-label="Python 88%"></span></div>
         </div>
 
         <div class="skill-card">
           <h3>Office & Docs</h3>
           <p>Excel-based test cases, SOPs, reporting</p>
-          <div class="bar"><span class="bar-fill" data-fill="92" aria-label="Docs & Reporting 92%"></span></div>
         </div>
       </div>
 
@@ -108,6 +133,8 @@
         <span class="badge tech">Python</span>
         <span class="badge tech">Linux</span>
         <span class="badge tech">Frida & Objection</span>
+        <span class="badge tech">ADB (Android Debug Bridge)</span>
+        <span class="badge tech">JADX / Ghidra</span>
       </div>
     </section>
   </main>
@@ -115,8 +142,8 @@
   <!-- Footer -->
   <footer class="site-footer" role="contentinfo">
     <div class="container">
-      <p>© 2025 Fareed Akram • 
-        <a href="https://github.com/cyberbyte0" target="_blank" rel="noopener noreferrer">GitHub</a> • 
+      <p>© 2026 Fareed Akram •
+        <a href="https://github.com/cyberbyte0" target="_blank" rel="noopener noreferrer">GitHub</a> •
         <a href="https://www.linkedin.com/in/fareed-akram-m" target="_blank" rel="noopener noreferrer">LinkedIn</a>
       </p>
     </div>
@@ -125,4 +152,5 @@
   <canvas id="matrix-bg"></canvas>
   <script src="script.js" defer></script>
 </body>
+
 </html>

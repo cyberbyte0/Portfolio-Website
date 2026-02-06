@@ -1,0 +1,86 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <meta name="description" content="404 - Page Not Found.">
+    <title>404 — System Error</title>
+
+    <link rel="icon" type="image/png" href="assets/favicon.png">
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Poppins:wght@600&display=swap"
+        rel="stylesheet">
+
+    <!-- Content Security Policy -->
+    <meta http-equiv="Content-Security-Policy"
+        content="default-src 'self'; script-src 'self' https://www.googletagmanager.com; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; img-src 'self' data:; font-src 'self' https://fonts.gstatic.com; connect-src 'self' https://www.google-analytics.com;">
+
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-9109JW4ZJP"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+        gtag('config', 'G-9109JW4ZJP');
+    </script>
+
+    <style>
+        .error-container {
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            position: relative;
+            z-index: 1;
+            padding: 1.5rem;
+        }
+
+        .error-code {
+            font-size: clamp(5rem, 15vw, 10rem);
+            font-weight: 800;
+            background: linear-gradient(135deg, var(--accent), var(--accent-2));
+            -webkit-background-clip: text;
+            background-clip: text;
+            color: transparent;
+            line-height: 1;
+            margin-bottom: 1rem;
+        }
+
+        .error-tag {
+            font-family: monospace;
+            background: var(--badge-bg);
+            color: var(--badge-color);
+            padding: 0.25rem 0.75rem;
+            border-radius: 4px;
+            font-size: 1.1rem;
+            margin-bottom: 2rem;
+        }
+
+        .error-msg {
+            font-size: 1.25rem;
+            color: var(--muted);
+            max-width: 400px;
+            margin-bottom: 2.5rem;
+        }
+    </style>
+</head>
+
+<body>
+    <canvas id="matrix-bg"></canvas>
+
+    <main class="error-container container">
+        <div class="error-code">404</div>
+        <div class="error-tag"># SIGNAL_LOST_ERROR</div>
+        <p class="error-msg">
+            The coordinates you've provided don't exist in this sector. The requested resource has been moved or purged.
+        </p>
+        <a href="index.html" class="btn primary large">Safely Return Home</a>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

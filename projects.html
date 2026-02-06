@@ -1,32 +1,49 @@
 <!doctype html>
 <html lang="en">
+
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <meta name="description" content="Fareed Akram — Selected projects in API security, automation, and microgrid systems.">
+  <meta name="description"
+    content="Fareed Akram — Selected projects in API security, automation, and microgrid systems.">
 
   <!-- Open Graph / Social Preview -->
   <meta property="og:title" content="Fareed Akram — Projects">
-  <meta property="og:description" content="Explore Fareed Akram's projects in security research, automation, and academic work.">
+  <meta property="og:description"
+    content="Explore Fareed Akram's projects in security research, automation, and academic work.">
   <meta property="og:image" content="https://yourdomain.com/assets/avatar.jpg">
   <meta property="og:type" content="website">
 
   <link rel="icon" type="image/png" href="assets/favicon.png">
+  <meta name="theme-color" content="#eef2f6" media="(prefers-color-scheme: light)">
+  <meta name="theme-color" content="#071025" media="(prefers-color-scheme: dark)">
 
   <title>Projects — Fareed Akram</title>
 
   <!-- Google Fonts -->
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&family=Poppins:wght@600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&family=Poppins:wght@600&display=swap"
+    rel="stylesheet">
 
   <!-- CSS -->
   <link rel="stylesheet" href="styles.css">
 
   <!-- Content Security Policy -->
-  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; img-src 'self' data:; font-src 'self' https://fonts.gstatic.com;">
+  <meta http-equiv="Content-Security-Policy"
+    content="default-src 'self'; script-src 'self' https://www.googletagmanager.com; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; img-src 'self' data:; font-src 'self' https://fonts.gstatic.com; connect-src 'self' https://www.google-analytics.com;">
+
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-9109JW4ZJP"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+    gtag('config', 'G-9109JW4ZJP');
+  </script>
 </head>
+
 <body>
   <!-- Removing the skip to content link -->
-  
+
   <!-- Header -->
   <header class="site-header" role="banner">
     <div class="container header-inner">
@@ -52,8 +69,24 @@
       <div class="controls">
         <button id="themeToggleProjects" class="theme-btn" aria-label="Toggle dark/light theme">
           <div class="theme-icon-box">
-            <svg class="icon-sun" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="5"></circle><line x1="12" y1="1" x2="12" y2="3"></line><line x1="12" y1="21" x2="12" y2="23"></line><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line><line x1="1" y1="12" x2="3" y2="12"></line><line x1="21" y1="12" x2="23" y2="12"></line><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line></svg>
-            <svg class="icon-moon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path></svg>
+            <svg class="icon-sun" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"
+              stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <title>Light Mode</title>
+              <circle cx="12" cy="12" r="5"></circle>
+              <line x1="12" y1="1" x2="12" y2="3"></line>
+              <line x1="12" y1="21" x2="12" y2="23"></line>
+              <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+              <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+              <line x1="1" y1="12" x2="3" y2="12"></line>
+              <line x1="21" y1="12" x2="23" y2="12"></line>
+              <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+              <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+            </svg>
+            <svg class="icon-moon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"
+              stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <title>Dark Mode</title>
+              <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+            </svg>
           </div>
         </button>
       </div>
@@ -64,14 +97,16 @@
   <main id="main" role="main">
     <section class="container fade-up">
       <h1>Projects</h1>
-      <p class="muted">A collection of selected academic, security, and automation projects demonstrating practical research and development skills.</p>
+      <p class="muted">A collection of selected academic, security, and automation projects demonstrating practical
+        research and development skills.</p>
 
       <div class="project-grid">
         <!-- Project 1 -->
         <article class="project-card">
           <h3>Control & Management of Railway System connected to Microgrid</h3>
           <p class="muted">Academic project — energy efficiency with supercapacitors & PV integration.</p>
-          <p>Designed a microgrid-connected railway control system using supercapacitors and battery storage to optimize regenerative braking energy and station-level renewable integration.</p>
+          <p>Designed a microgrid-connected railway control system using supercapacitors and battery storage to optimize
+            regenerative braking energy and station-level renewable integration.</p>
           <div class="project-links">
             <a class="btn outline" href="blog/railway-microgrid.html">Read paper</a>
             <a class="btn ghost" href="https://github.com/cyberbyte0/Academic-Project">Repository</a>
@@ -82,7 +117,8 @@
         <article class="project-card">
           <h3>iOS Jailbreak / Sideload Detector</h3>
           <p class="muted">Web-based tool to detect jailbreaking/sideloading signs on iOS via Safari.</p>
-          <p>A lightweight, dependency-free tool running entirely in the browser. Features multi-layer detection (soft checks & URL schemes) for tools like Cydia and Sileo. Privacy-focused with optional intrusive checks.</p>
+          <p>A lightweight, dependency-free tool running entirely in the browser. Features multi-layer detection (soft
+            checks & URL schemes) for tools like Cydia and Sileo. Privacy-focused with optional intrusive checks.</p>
           <div class="project-links">
             <a class="btn outline" href="https://cyberbyte0.github.io/ios-jailbrake-test/index.html">Live Demo</a>
           </div>
@@ -92,7 +128,8 @@
         <article class="project-card">
           <h3>Security Automation Toolkit</h3>
           <p class="muted">Automation scripts for OTP flows, CAPTCHA waiters, and stealth browser automation.</p>
-          <p>Playwright-based toolkit with simulated human timing, temporary email handling, and OTP parsing for test environments (used for internal automation & research).</p>
+          <p>Playwright-based toolkit with simulated human timing, temporary email handling, and OTP parsing for test
+            environments (used for internal automation & research).</p>
           <div class="project-links">
             <a class="btn outline" href="#">Details</a>
             <a class="btn ghost" href="#">Repository</a>
@@ -101,14 +138,16 @@
 
         <!-- Project 4 -->
         <article class="project-card">
-          <h3>Streaming App DRM Analysis</h3>
-          <p>Performed controlled research on DRM-protected mobile apps, analyzed CKC key requests, and recommended stronger key lifecycle management.</p>
+          <h3>Android Application Security Analysis</h3>
+          <p>Performed static and dynamic analysis of Android applications, auditing manifest permissions and using
+            Frida to identify vulnerabilities in runtime logic.</p>
         </article>
 
         <!-- Project 5 -->
         <article class="project-card">
           <h3>Secure Workflow Simulator</h3>
-          <p>Built a test automation framework to validate signup/login workflows, integrating CAPTCHA waiting and safe OTP handling for QA purposes.</p>
+          <p>Built a test automation framework to validate signup/login workflows, integrating CAPTCHA waiting and safe
+            OTP handling for QA purposes.</p>
         </article>
       </div>
     </section>
@@ -117,11 +156,14 @@
   <!-- Footer -->
   <footer class="site-footer" role="contentinfo">
     <div class="container">
-      <p>© 2025 Fareed Akram • <a href="https://github.com/cyberbyte0" target="_blank" rel="noopener noreferrer">GitHub</a> • <a href="https://www.linkedin.com/in/fareed-akram-m" target="_blank" rel="noopener noreferrer">LinkedIn</a></p>
+      <p>© 2025 Fareed Akram • <a href="https://github.com/cyberbyte0" target="_blank"
+          rel="noopener noreferrer">GitHub</a> • <a href="https://www.linkedin.com/in/fareed-akram-m" target="_blank"
+          rel="noopener noreferrer">LinkedIn</a></p>
     </div>
   </footer>
 
   <canvas id="matrix-bg"></canvas>
   <script src="script.js" defer></script>
 </body>
+
 </html>

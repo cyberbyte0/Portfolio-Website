@@ -1,74 +1,51 @@
 # Fareed Akram — Portfolio
 
-A professional, lightweight, and responsive portfolio website built with vanilla HTML, CSS, and JavaScript. Designed for high performance, accessibility, and ease of deployment on GitHub Pages.
+A professional, high-performance portfolio website built with vanilla HTML5, CSS3, and ES6+ JavaScript. Specialized in showcasing expertise in **API Security**, **Android Application Analysis**, and **ADB-based Automation**.
 
-## ✨ Features
+## ✨ Key Features
 
-- **Interactive Theme Toggle**: Custom-built Sun/Moon animation for Light/Dark mode switching with local storage persistence.
-- **Matrix Background Effect**: Canvas-based Matrix rain animation that adapts to the theme.
-- **Responsive Design**: Fully responsive layout using CSS Grid and Flexbox, optimized for mobile, tablet, and desktop.
-- **Performance Optimized**: No build steps, minimal dependencies, and optimized asset loading.
-- **Security Focused**: Implements Content Security Policy (CSP) for enhanced security.
-- **Dynamic Interactions**:
-  - Typing effect for hero section.
-  - Fade-up animations on scroll.
-  - Interactive skill bars.
-  - Contact form validation.
+- **Interactive Theme Engine**: Custom-built sun/moon animation with a bouncy spring physics transition and local storage persistence.
+- **Dynamic Matrix Background**: Optimized Canvas-based Matrix rain animation that adapts dynamically to light/dark themes.
+- **Micro-interactions**: Glassmorphism effects, modern hover "glow" states, and smooth lift transitions for all project cards.
+- **Project Filtering**: Functional JS-based categorization (Security, Automation, Academic) for streamlined navigation.
+- **Custom Error Handling**: Theme-integrated `404.html` with Matrix background and a dedicated "Return Home" path.
+- **Performance Optimized**: Zero external dependencies (excluding fonts/analytics), minimal layout shifts (CLS), and optimized SVG rendering.
+- **SEO & Discoverability**: Semantic HTML5 structure, integrated sitemap.xml, and robots.txt for professional search engine indexing.
+- **Traffic Insights**: Google Analytics (gtag.js) integration for monitoring engagement and visitor behavior.
 
-## 🛠️ Tech Stack
+## 🛠️ Tech Stack & Philosophy
 
-- **Frontend**: HTML5, CSS3 (Custom Properties, Flexbox, Grid), Vanilla JavaScript (ES6+).
-- **Icons**: SVG Icons (Feather Icons style).
-- **Fonts**: Google Fonts (Inter, Poppins).
-- **Deployment**: GitHub Pages (Static Hosting).
+- **Frontend**: Vanilla HTML5, CSS3 (Custom Properties, Flexbox, Grid), JavaScript (ES6+).
+- **Design Strategy**: Desktop-first with full mobile responsive breakpoints.
+- **Deployment**: Static hosting via GitHub Pages.
 
-## 🚀 Quick Start
+## 🛡️ Security & Performance
 
-No build tools or package managers required. You can run the project directly.
+- **Content Security Policy (CSP)**: Strict headers implementation to permit only trusted resources (Self, Google Fonts, and Google Analytics).
+- **Asset Optimization**: Lazy loading for images and preconnect hints for Google Fonts.
+- **Operational Excellence**: Clean code structure with 2026 copyright normalization across the entire domain.
 
-### Local Development
+## 🧩 Technical Challenges & Solutions
 
-To preview the site locally, you can use Python's built-in HTTP server or any other static file server.
+### 1. The "Bouncy" Theme Transition
+Implementing the bouncy theme toggle required a custom `cubic-bezier` timing function to simulate spring physics without external animation libraries. The challenge was ensuring the icons didn't "flicker" during the rapid state change, which was solved through synchronized CSS transforms and opacity transitions.
 
-1.  Clone the repository:
-    ```bash
-    git clone https://github.com/yourusername/portfolio-website.git
-    cd portfolio-website
-    ```
+### 2. Canvas Performance
+To prevent the Matrix background from impacting scroll performance, I implemented a visibility listener that pauses the animation loop when the tab is inactive, significantly reducing CPU/GPU overhead.
 
-2.  Start a local server:
-    ```bash
-    # Python 3
-    python3 -m http.server 8080
-    ```
+### 3. Secure Content Expansion (Android Pivot)
+A major challenge was restructuring the portfolio's story to highlight high-value technical skills like **Android Static & Dynamic Analysis**. This required not just text updates, but a full redesign of the Job Descriptions, Achievement stats, and the Project Showcase to reflect expertise in ADB-based automation and vulnerability research using tools like JADX and Frida.
 
-3.  Open your browser and navigate to `http://localhost:8080`.
+### 4. Custom Error Orchestration
+Implementing the custom `404.html` required ensuring it retained the site's unique "Matrix" identity while providing a clear recovery path for the user. I synchronized the script.js and styles.css dependencies to ensure the canvas animation remains fluid even on error pages.
 
-## 📂 Project Structure
+## 🚀 Local Development
 
-```
-/
-├── index.html              # Home page
-├── experience.html         # Experience timeline
-├── skills.html             # Technical skills
-├── projects.html           # Project showcase
-├── security-research.html  # Security research publications
-├── blog.html               # Blog posts
-├── contact.html            # Contact form and info
-├── styles.css              # Global styles and themes
-├── script.js               # Core logic (theme, animations, validation)
-└── assets/                 # Images and static assets
-    ├── avatar.jpg
-    └── favicon.png
-```
-
-## 🎨 Customization
-
-1.  **Personal Info**: Update the HTML files with your own content (text, links, and projects).
-2.  **Avatar**: Replace `assets/avatar.jpg` with your own profile picture.
-3.  **Colors**: Modify the CSS variables in `styles.css` (under `:root` and `body.dark`) to change the color scheme.
-4.  **Favicon**: Replace `assets/favicon.png` with your own icon.
+No build tools required.
+1. Clone the repo.
+2. Run a local server: `python3 -m http.server 8080`.
+3. Open `localhost:8080`.
 
 ## 📄 License
 
-This project is open source and available for personal and educational use.
+Open source and available for personal use.

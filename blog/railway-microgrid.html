@@ -1,13 +1,16 @@
 <!doctype html>
 <html lang="en">
+
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <meta name="description" content="A techno-economic process for energy storage using Supercapacitors in trains to reduce energy consumption, integrating renewable energy sources.">
+  <meta name="description"
+    content="A techno-economic process for energy storage using Supercapacitors in trains to reduce energy consumption, integrating renewable energy sources.">
 
   <!-- Open Graph / Social Preview -->
   <meta property="og:title" content="Control & Management of Railway System connected to Microgrid">
-  <meta property="og:description" content="A techno-economic process for energy storage using Supercapacitors in trains to reduce energy consumption, integrating renewable energy sources.">
+  <meta property="og:description"
+    content="A techno-economic process for energy storage using Supercapacitors in trains to reduce energy consumption, integrating renewable energy sources.">
   <meta property="og:image" content="../assets/avatar.jpg">
   <meta property="og:type" content="article">
 
@@ -16,16 +19,28 @@
   <title>Control & Management of Railway System — Fareed Akram</title>
 
   <!-- Google Fonts -->
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&family=Poppins:wght@600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&family=Poppins:wght@600&display=swap"
+    rel="stylesheet">
 
   <!-- CSS -->
   <link rel="stylesheet" href="../styles.css">
 
   <!-- Content Security Policy -->
-  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; img-src 'self' data:; font-src 'self' https://fonts.gstatic.com;">
+  <meta http-equiv="Content-Security-Policy"
+    content="default-src 'self'; script-src 'self' https://www.googletagmanager.com; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; img-src 'self' data:; font-src 'self' https://fonts.gstatic.com; connect-src 'self' https://www.google-analytics.com;">
+
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-9109JW4ZJP"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+    gtag('config', 'G-9109JW4ZJP');
+  </script>
 </head>
+
 <body>
-  
+
   <!-- Header -->
   <header class="site-header" role="banner">
     <div class="container header-inner">
@@ -51,8 +66,22 @@
       <div class="controls">
         <button id="themeTogglePost" class="theme-btn" aria-label="Toggle dark/light theme">
           <div class="theme-icon-box">
-            <svg class="icon-sun" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="5"></circle><line x1="12" y1="1" x2="12" y2="3"></line><line x1="12" y1="21" x2="12" y2="23"></line><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line><line x1="1" y1="12" x2="3" y2="12"></line><line x1="21" y1="12" x2="23" y2="12"></line><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line></svg>
-            <svg class="icon-moon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path></svg>
+            <svg class="icon-sun" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"
+              stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <circle cx="12" cy="12" r="5"></circle>
+              <line x1="12" y1="1" x2="12" y2="3"></line>
+              <line x1="12" y1="21" x2="12" y2="23"></line>
+              <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+              <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+              <line x1="1" y1="12" x2="3" y2="12"></line>
+              <line x1="21" y1="12" x2="23" y2="12"></line>
+              <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+              <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+            </svg>
+            <svg class="icon-moon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"
+              stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+            </svg>
           </div>
         </button>
       </div>
@@ -63,26 +92,35 @@
   <main id="main" role="main">
     <section class="container fade-up">
       <a href="../blog.html" class="back-link">← Back to Blog</a>
-      
+
       <article class="blog-post">
         <header class="post-header">
           <h1>Control & Management of Railway System connected to Microgrid</h1>
           <p class="post-meta">Published on <time datetime="2025-02-06">February 6, 2025</time> • 10 min read</p>
         </header>
-        
-        <div class="post-content">
-          <p>This project proposes a techno-economic process for energy storage using Supercapacitors (SCs) in trains to reduce energy consumption. The design integrates railway stations with renewable energy sources—specifically Photovoltaic (PV) and Wind systems—along with batteries for the Energy Storage System (ESS).</p>
-          
-          <p>For the train, SCs are implemented in the ESS, powered during braking phases and from stations via a pantograph installed on the overhead power line at each stop. SCs are selected for their high power characteristics, wide number of charge/discharge cycles, low specific energy, and fast charging time.</p>
 
-          <p>The project suggests an energy management approach to control the DC bus by voltage and the buck-boost converter by current. It also details the sizing of PI controllers used for the stabilization of the DC bus for both the train and the station. The entire system is modeled and simulated in MATLAB-Simulink to demonstrate the suitability of the proposed power-train and control strategy.</p>
+        <div class="post-content">
+          <p>This project proposes a techno-economic process for energy storage using Supercapacitors (SCs) in trains to
+            reduce energy consumption. The design integrates railway stations with renewable energy sources—specifically
+            Photovoltaic (PV) and Wind systems—along with batteries for the Energy Storage System (ESS).</p>
+
+          <p>For the train, SCs are implemented in the ESS, powered during braking phases and from stations via a
+            pantograph installed on the overhead power line at each stop. SCs are selected for their high power
+            characteristics, wide number of charge/discharge cycles, low specific energy, and fast charging time.</p>
+
+          <p>The project suggests an energy management approach to control the DC bus by voltage and the buck-boost
+            converter by current. It also details the sizing of PI controllers used for the stabilization of the DC bus
+            for both the train and the station. The entire system is modeled and simulated in MATLAB-Simulink to
+            demonstrate the suitability of the proposed power-train and control strategy.</p>
 
           <h2>Key Features</h2>
           <ul>
-            <li><strong>Hybrid Energy Storage</strong>: Utilization of Supercapacitors (SCs) for trains and Batteries for station ESS.</li>
-            <li><strong>Renewable Integration</strong>: Integration of PV and Wind energy sources at railway stations.</li>
+            <li><strong>Hybrid Energy Storage</strong>: Utilization of Supercapacitors (SCs) for trains and Batteries
+              for station ESS.</li>
+            <li><strong>Renewable Integration</strong>: Integration of PV and Wind energy sources at railway stations.
+            </li>
             <li><strong>Regenerative Braking</strong>: Harvesting energy during braking phases to charge SCs.</li>
-            <li><strong>Control Strategy</strong>: 
+            <li><strong>Control Strategy</strong>:
               <ul>
                 <li>DC Bus Voltage Control.</li>
                 <li>Current Control for Buck-Boost Converters.</li>
@@ -92,30 +130,25 @@
             <li><strong>Techno-Economic Analysis</strong>: Focus on reducing overall energy consumption.</li>
           </ul>
 
-          <h2>Team Members</h2>
-          <ul>
-            <li>BUGUDI MOHAN KUMAR (20G31A0207)</li>
-            <li>MALIREDDY LAKSHMAN (20G31A0215)</li>
-            <li>SEELAM RAJASEKHAR (20G31A0221)</li>
-            <li>BOYA JOLANNA GARI RAMAKRISHNA (20G31A0205)</li>
-            <li><strong>M FAREED AKRAM</strong> (21G35A0215)</li>
-          </ul>
-
           <h2>Project Structure & MATLAB Files</h2>
-          <p>The core simulations are located in the repository. The files correspond to specific figures and scenarios from the study:</p>
-          
+          <p>The core simulations are located in the repository. The files correspond to specific figures and scenarios
+            from the study:</p>
+
           <ul>
             <li><strong>Simulation Models (.slx)</strong>:
               <ul>
-                <li><code>fig7a12.slx</code> / <code>fig7a12nn_.slx</code>: Likely represents the simulation results for Figures 7, 12, or related scenarios (Standard vs Neural Network/Enhanced variants).</li>
+                <li><code>fig7a12.slx</code> / <code>fig7a12nn_.slx</code>: Likely represents the simulation results for
+                  Figures 7, 12, or related scenarios (Standard vs Neural Network/Enhanced variants).</li>
                 <li><code>fig8a.slx</code> / <code>fig8ann_.slx</code>: Simulation model for Figure 8 scenarios.</li>
                 <li><code>fig9am.slx</code> / <code>fig9amnn_.slx</code>: Simulation model for Figure 9 scenarios.</li>
               </ul>
             </li>
             <li><strong>Data Files (.mat)</strong>:
               <ul>
-                <li><code>inputparame.mat</code>: Contains input parameters for the simulation (e.g., irradiation, wind speed, load profiles).</li>
-                <li><code>mainparamee.mat</code>: Stores main system parameters (e.g., component sizing, controller gains).</li>
+                <li><code>inputparame.mat</code>: Contains input parameters for the simulation (e.g., irradiation, wind
+                  speed, load profiles).</li>
+                <li><code>mainparamee.mat</code>: Stores main system parameters (e.g., component sizing, controller
+                  gains).</li>
               </ul>
             </li>
           </ul>
@@ -123,13 +156,17 @@
           <h2>Getting Started</h2>
           <p>To explore the simulations:</p>
           <ol>
-            <li><strong>Clone the Repository</strong>: <code>git clone https://github.com/cyberbyte0/Academic-Project</code></li>
-            <li><strong>Setup MATLAB Workspace</strong>: Open MATLAB, navigate to the MATLAB FILES directory, and load the required parameter files (<code>inputparame.mat</code>, <code>mainparamee.mat</code>).</li>
-            <li><strong>Run Simulations</strong>: Open a model file (e.g., <code>fig7a12.slx</code>) and click Run in Simulink.</li>
+            <li><strong>Clone the Repository</strong>:
+              <code>git clone https://github.com/cyberbyte0/Academic-Project</code></li>
+            <li><strong>Setup MATLAB Workspace</strong>: Open MATLAB, navigate to the MATLAB FILES directory, and load
+              the required parameter files (<code>inputparame.mat</code>, <code>mainparamee.mat</code>).</li>
+            <li><strong>Run Simulations</strong>: Open a model file (e.g., <code>fig7a12.slx</code>) and click Run in
+              Simulink.</li>
           </ol>
-          
+
           <div class="project-links" style="margin-top: 2rem;">
-            <a class="btn outline" href="https://github.com/cyberbyte0/Academic-Project" target="_blank">View Repository</a>
+            <a class="btn outline" href="https://github.com/cyberbyte0/Academic-Project" target="_blank">View
+              Repository</a>
           </div>
         </div>
       </article>
@@ -139,11 +176,14 @@
   <!-- Footer -->
   <footer class="site-footer" role="contentinfo">
     <div class="container">
-      <p>© 2025 Fareed Akram • <a href="https://github.com/cyberbyte0" target="_blank" rel="noopener noreferrer">GitHub</a> • <a href="https://www.linkedin.com/in/fareed-akram-m" target="_blank" rel="noopener noreferrer">LinkedIn</a></p>
+      <p>© 2025 Fareed Akram • <a href="https://github.com/cyberbyte0" target="_blank"
+          rel="noopener noreferrer">GitHub</a> • <a href="https://www.linkedin.com/in/fareed-akram-m" target="_blank"
+          rel="noopener noreferrer">LinkedIn</a></p>
     </div>
   </footer>
 
   <canvas id="matrix-bg"></canvas>
   <script src="../script.js" defer></script>
 </body>
+
 </html>

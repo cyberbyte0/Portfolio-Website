@@ -1,32 +1,49 @@
 <!doctype html>
 <html lang="en">
+
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <meta name="description" content="Fareed Akram — Security Research in API security, authentication workflows, and secure design principles.">
+  <meta name="description"
+    content="Fareed Akram — Security Research in API security, authentication workflows, and secure design principles.">
 
   <!-- Open Graph / Social Preview -->
   <meta property="og:title" content="Fareed Akram — Security Research">
-  <meta property="og:description" content="Structured security research on API endpoints, workflows, and vulnerabilities.">
+  <meta property="og:description"
+    content="Structured security research on API endpoints, workflows, and vulnerabilities.">
   <meta property="og:image" content="https://yourdomain.com/assets/avatar.jpg">
   <meta property="og:type" content="website">
 
   <title>Security Research — Fareed Akram</title>
 
   <link rel="icon" type="image/png" href="assets/favicon.png">
+  <meta name="theme-color" content="#eef2f6" media="(prefers-color-scheme: light)">
+  <meta name="theme-color" content="#071025" media="(prefers-color-scheme: dark)">
 
   <!-- Google Fonts -->
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&family=Poppins:wght@600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&family=Poppins:wght@600&display=swap"
+    rel="stylesheet">
 
   <!-- CSS -->
   <link rel="stylesheet" href="styles.css">
 
   <!-- Content Security Policy -->
-  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; img-src 'self' data:; font-src 'self' https://fonts.gstatic.com;">
+  <meta http-equiv="Content-Security-Policy"
+    content="default-src 'self'; script-src 'self' https://www.googletagmanager.com; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; img-src 'self' data:; font-src 'self' https://fonts.gstatic.com; connect-src 'self' https://www.google-analytics.com;">
+
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-9109JW4ZJP"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+    gtag('config', 'G-9109JW4ZJP');
+  </script>
 </head>
+
 <body>
   <!-- Removing the skip to content link -->
-  
+
   <!-- Header -->
   <header class="site-header" role="banner">
     <div class="container header-inner">
@@ -52,8 +69,22 @@
       <div class="controls">
         <button id="themeToggleSR" class="theme-btn" aria-label="Toggle dark/light theme">
           <div class="theme-icon-box">
-            <svg class="icon-sun" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="5"></circle><line x1="12" y1="1" x2="12" y2="3"></line><line x1="12" y1="21" x2="12" y2="23"></line><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line><line x1="1" y1="12" x2="3" y2="12"></line><line x1="21" y1="12" x2="23" y2="12"></line><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line></svg>
-            <svg class="icon-moon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path></svg>
+            <svg class="icon-sun" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"
+              stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <circle cx="12" cy="12" r="5"></circle>
+              <line x1="12" y1="1" x2="12" y2="3"></line>
+              <line x1="12" y1="21" x2="12" y2="23"></line>
+              <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+              <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+              <line x1="1" y1="12" x2="3" y2="12"></line>
+              <line x1="21" y1="12" x2="23" y2="12"></line>
+              <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+              <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+            </svg>
+            <svg class="icon-moon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"
+              stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+            </svg>
           </div>
         </button>
       </div>
@@ -64,38 +95,76 @@
   <main id="main" role="main">
     <section class="container fade-up">
       <h1>Security Research</h1>
-      <p class="muted">Exploring API security, authentication workflows, and secure design principles.</p>
+      <p class="muted">A technical breakdown of my methodology for API security, Android application analysis, and
+        ADB-based
+        automation.</p>
 
-      <!-- Research Approach -->
+      <!-- Methodology Section -->
       <article class="card">
-        <h2>Approach</h2>
-        <p>I follow a structured methodology to uncover security issues:</p>
-        <ol>
-          <li>Map API endpoints & document requests (Burp Suite)</li>
-          <li>Validate input handling, authorization, and error responses</li>
-          <li>Check for OWASP API Top 10 issues (BOLA, excessive data exposure, etc.)</li>
-          <li>Log findings, classify severity, and report responsibly</li>
-        </ol>
+        <h2>My Research Methodology</h2>
+        <p>I employ a multi-layered approach to security analysis, shifting from high-level reconnaissance to deep
+          logic-flow inspection.</p>
+
+        <div class="methodology-grid">
+          <div class="method-step">
+            <span class="step-num">01</span>
+            <h3>Reconnaissance & Mapping</h3>
+            <p>Discovery of hidden endpoints, undocumented parameters, and API versioning (e.g., `/v1/` vs `/v2/`). I
+              use proxy tools to intercept mobile and web traffic simultaneously.</p>
+          </div>
+          <div class="method-step">
+            <span class="step-num">02</span>
+            <h3>Authentication & State Analysis</h3>
+            <p>Testing JWT integrity, token expiration, and session fixation. I analyze how the application handles
+              state across different user roles.</p>
+          </div>
+          <div class="method-step">
+            <span class="step-num">03</span>
+            <h3>Logical Flow Manipulation</h3>
+            <p>Focusing on the OWASP API Top 10, specifically targeting BOLA (Broken Object Level Authorization) and
+              Mass Assignment by fuzzing ID parameters and request bodies.</p>
+          </div>
+          <div class="method-step">
+            <span class="step-num">04</span>
+            <h3>Automated Stress Testing</h3>
+            <p>Developing custom Playwright scripts to simulate race conditions or brute-force scenarios that manual
+              testing might miss.</p>
+          </div>
+        </div>
       </article>
 
-      <!-- Workflow Diagram -->
+      <!-- Focus Areas Section -->
       <article class="card">
-        <h2>Example Workflow</h2>
-        <img src="assets/workflow-diagram.png" alt="Workflow diagram for security testing" class="responsive-img">
-        <p>This diagram illustrates my general process (redacted for confidentiality).</p>
+        <div class="badge">Technical Focus</div>
+        <h2>Research Interests & Focus Areas</h2>
+        <p>In my independent research and offensive security labs, I focus on identifying critical logic gaps in modern
+          web architectures. My work emphasizes the following vulnerability classes:</p>
+
+        <div class="technical-details">
+          <ul>
+            <li><strong>Authorization Logic (IDOR/BOLA):</strong> Analyzing how APIs validate resource ownership to
+              prevent unauthorized data access between users.</li>
+            <li><strong>Information Disclosure:</strong> Identifying excessive data exposure in API responses where
+              sensitive PII or system metadata is leaked.</li>
+            <li><strong>Automated Bypass Techniques:</strong> Researching ways to simulate realistic user behavior to
+              test the resilience of rate-limits and CAPTCHA implementations.</li>
+            <li><strong>Client-Side Security:</strong> Reversing Android applications to inspect SSL pinning, root
+              detection, and local data encryption.</li>
+          </ul>
+        </div>
       </article>
 
-      <!-- Sample Test Case -->
+      <!-- Tools Section -->
       <article class="card">
-        <h2>Sample Test Case (Dummy Data)</h2>
-        <pre><code>TC-API-01
-Scenario: Validate BOLA for /api/user/profile
-Steps:
-  1. Login as User A
-  2. Access User B's profile ID
-Expected:
-  API should return 403 Forbidden
-Status: Pass ✅</code></pre>
+        <h2>Technical Toolkit</h2>
+        <div class="badges">
+          <span class="badge">Burp Suite Professional</span>
+          <span class="badge">Frida & Objection</span>
+          <span class="badge">ADB (Android Debug Bridge)</span>
+          <span class="badge">JADX / Ghidra</span>
+          <span class="badge">Postman</span>
+          <span class="badge">Playwright</span>
+        </div>
       </article>
     </section>
   </main>
@@ -103,8 +172,8 @@ Status: Pass ✅</code></pre>
   <!-- Footer -->
   <footer class="site-footer" role="contentinfo">
     <div class="container">
-      <p>© 2025 Fareed Akram • 
-        <a href="https://github.com/cyberbyte0" target="_blank" rel="noopener noreferrer">GitHub</a> • 
+      <p>© 2026 Fareed Akram •
+        <a href="https://github.com/cyberbyte0" target="_blank" rel="noopener noreferrer">GitHub</a> •
         <a href="https://www.linkedin.com/in/fareed-akram-m" target="_blank" rel="noopener noreferrer">LinkedIn</a>
       </p>
     </div>
@@ -113,4 +182,5 @@ Status: Pass ✅</code></pre>
   <canvas id="matrix-bg"></canvas>
   <script src="script.js" defer></script>
 </body>
+
 </html>
