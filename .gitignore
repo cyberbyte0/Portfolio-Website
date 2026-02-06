@@ -1,5 +1,7 @@
 # OS specific
 .DS_Store
 
+
 /additions
 /temp.html
+/blog/template.html

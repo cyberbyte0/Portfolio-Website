@@ -1,0 +1,125 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <meta name="description" content="A lightweight, web-based tool designed to detect signs of jailbreaking or sideloading on iOS devices via Safari.">
+
+  <!-- Open Graph / Social Preview -->
+  <meta property="og:title" content="iOS Jailbreak / Sideload Detector (Web-based)">
+  <meta property="og:description" content="A lightweight, web-based tool designed to detect signs of jailbreaking or sideloading on iOS devices via Safari.">
+  <meta property="og:image" content="../assets/avatar.jpg">
+  <meta property="og:type" content="article">
+
+  <link rel="icon" type="image/png" href="../assets/favicon.png">
+
+  <title>iOS Jailbreak / Sideload Detector — Fareed Akram</title>
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&family=Poppins:wght@600&display=swap" rel="stylesheet">
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="../styles.css">
+
+  <!-- Content Security Policy -->
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; img-src 'self' data:; font-src 'self' https://fonts.gstatic.com;">
+</head>
+<body>
+  
+  <!-- Header -->
+  <header class="site-header" role="banner">
+    <div class="container header-inner">
+      <div class="brand">
+        <a href="../index.html" class="logo">
+          <span class="logo-mark" aria-hidden="true"></span>
+          <span class="logo-text">Fareed Akram</span>
+        </a>
+      </div>
+
+      <nav class="nav" role="navigation" aria-label="Main Navigation">
+        <ul>
+          <li><a href="../index.html" class="nav-link">Home</a></li>
+          <li><a href="../experience.html" class="nav-link">Experience</a></li>
+          <li><a href="../skills.html" class="nav-link">Skills</a></li>
+          <li><a href="../projects.html" class="nav-link">Projects</a></li>
+          <li><a href="../security-research.html" class="nav-link">Security Research</a></li>
+          <li><a href="../blog.html" class="nav-link active">Blog</a></li>
+          <li><a href="../contact.html" class="nav-link">Contact</a></li>
+        </ul>
+      </nav>
+
+      <div class="controls">
+        <button id="themeTogglePost" class="theme-btn" aria-label="Toggle dark/light theme">
+          <div class="theme-icon-box">
+            <svg class="icon-sun" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="5"></circle><line x1="12" y1="1" x2="12" y2="3"></line><line x1="12" y1="21" x2="12" y2="23"></line><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line><line x1="1" y1="12" x2="3" y2="12"></line><line x1="21" y1="12" x2="23" y2="12"></line><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line></svg>
+            <svg class="icon-moon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path></svg>
+          </div>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Main Content -->
+  <main id="main" role="main">
+    <section class="container fade-up">
+      <a href="../blog.html" class="back-link">← Back to Blog</a>
+      
+      <article class="blog-post">
+        <header class="post-header">
+          <h1>iOS Jailbreak / Sideload Detector (Web-based)</h1>
+          <p class="post-meta">Published on <time datetime="2025-02-06">February 6, 2025</time> • 5 min read</p>
+        </header>
+        
+        <div class="post-content">
+          <p>I have developed a lightweight, web-based tool designed to detect signs of jailbreaking or sideloading on iOS devices. It runs directly in Safari and uses a combination of non-intrusive browser checks and URL scheme probes to identify potential modifications without requiring app installation.</p>
+          
+          <p><a href="../additions/ios-jailbrake-test/test.html" class="btn outline" target="_blank">Try the Live Demo</a></p>
+
+          <h2>Key Features and Advantages</h2>
+          <ul>
+            <li><strong>Multi-Layer Detection</strong>: Performs soft (informational) checks on browser APIs (e.g., User-Agent, storage, performance) and intrusive URL scheme tests for known tools like Cydia, Sileo, and Dopamine.</li>
+            <li><strong>User-Friendly Interface</strong>: Includes a progress bar, real-time logs, and visual test results for easy interpretation.</li>
+            <li><strong>No Dependencies</strong>: Pure HTML, CSS, and JavaScript—runs entirely in the browser with no server-side components.</li>
+            <li><strong>Privacy-Focused</strong>: Non-intrusive by default; intrusive checks are optional and clearly indicated.</li>
+            <li><strong>Advantages</strong>: Quick to deploy, no native code needed, educational for understanding iOS security indicators, and effective for basic detection in controlled environments.</li>
+          </ul>
+
+          <h2>Limitations or Drawbacks</h2>
+          <ul>
+            <li><strong>False Negatives</strong>: Stealth jailbreaks (e.g., Dopamine with hiding enabled) may evade detection by masking schemes or traces.</li>
+            <li><strong>Browser Restrictions</strong>: Limited to what Safari exposes; cannot access file systems, full app lists, or native APIs, leading to incomplete coverage.</li>
+            <li><strong>iOS-Only</strong>: Optimized for Safari on iPhone/iPad; may not function correctly on other platforms or browsers.</li>
+            <li><strong>Intrusive Nature</strong>: URL scheme checks may trigger app openings or dialogs, which could be disruptive.</li>
+            <li><strong>No Guarantees</strong>: Absence of detections does not confirm a clean device; advanced evasion techniques can bypass it.</li>
+          </ul>
+
+          <h2>Basic Usage Instructions</h2>
+          <ol>
+            <li>Open the <a href="../additions/ios-jailbrake-test/test.html" target="_blank">test page</a> in Safari on an iPhone or iPad.</li>
+            <li>Click <strong>Test All</strong> to run both soft and intrusive checks, or <strong>Soft only</strong> for non-intrusive tests.</li>
+            <li>Monitor the progress bar, test tiles, and log area for results.</li>
+            <li>Review the risk score (percentage) and notes for interpretation.</li>
+            <li>For best results, test on a physical device; simulators may yield inaccurate outcomes.</li>
+          </ol>
+
+          <h2>Dependencies or Requirements</h2>
+          <ul>
+            <li><strong>Browser</strong>: Safari on iOS (iPhone/iPad recommended; tested on iOS 15+).</li>
+            <li><strong>No External Dependencies</strong>: Self-contained HTML file—no libraries, frameworks, or installations required.</li>
+          </ul>
+        </div>
+      </article>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="site-footer" role="contentinfo">
+    <div class="container">
+      <p>© 2025 Fareed Akram • <a href="https://github.com/cyberbyte0" target="_blank" rel="noopener noreferrer">GitHub</a> • <a href="https://www.linkedin.com/in/fareed-akram-m" target="_blank" rel="noopener noreferrer">LinkedIn</a></p>
+    </div>
+  </footer>
+
+  <canvas id="matrix-bg"></canvas>
+  <script src="../script.js" defer></script>
+</body>
+</html>
