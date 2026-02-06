@@ -1,4 +1,9 @@
 document.addEventListener("DOMContentLoaded", () => {
+  /* Randomized Logo Symbol */
+  const symbols = ['"$_ "', '">_ "', '"#> "'];
+  const randomSymbol = symbols[Math.floor(Math.random() * symbols.length)];
+  document.documentElement.style.setProperty('--logo-symbol', randomSymbol);
+
   /* Typing Effect with Improved Performance */
   const typingEl = document.getElementById("typing");
   if (typingEl) {

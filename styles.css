@@ -98,17 +98,28 @@ body.dark .site-header {
 .brand .logo {
   display: flex;
   align-items: center;
-  gap: .6rem;
-  color: inherit;
+  gap: 12px;
   text-decoration: none;
+  font-weight: 700;
+  font-size: 1.25rem;
+  color: var(--text);
+  transition: var(--transition);
+}
+
+.brand .logo:hover {
+  transform: translateX(4px);
 }
 
 .logo-mark {
-  width: 38px;
-  height: 38px;
+  width: 34px;
+  height: 34px;
+  background: linear-gradient(135deg, var(--accent), var(--accent-2));
   border-radius: 8px;
-  background: linear-gradient(135deg, #7c3aed, #06b6d4);
-  box-shadow: var(--shadow-sm);
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 4px 12px rgba(37, 99, 235, 0.2);
   transition: transform 0.3s ease;
 }
 
@@ -116,9 +127,34 @@ body.dark .site-header {
   transform: rotate(5deg) scale(1.05);
 }
 
+.logo-mark::before {
+  content: var(--logo-symbol, '> _');
+  color: white;
+  font-family: 'Courier New', monospace;
+  font-size: 14px;
+  font-weight: 900;
+  letter-spacing: -1px;
+}
+
+/* Subtle Cursor Blink */
+@keyframes cursorBlink {
+  50% {
+    opacity: 0.5;
+  }
+}
+
+.logo-mark::before {
+  animation: cursorBlink 1.2s infinite;
+}
+
 .logo-text {
   font-weight: 700;
-  font-family: "Poppins", sans-serif;
+  font-family: 'Poppins', sans-serif;
+  letter-spacing: -0.5px;
+  background: linear-gradient(to right, var(--text), var(--accent));
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 /* NAV */
@@ -919,6 +955,7 @@ textarea.form-control {
   background-clip: text;
   color: transparent;
 }
+
 
 .achievement-item p {
   color: var(--text);
