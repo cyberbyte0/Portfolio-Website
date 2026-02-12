@@ -205,10 +205,12 @@ document.addEventListener("DOMContentLoaded", () => {
 
   initSkillBars();
 
-  /* Form Validation */
-  const contactForm = document.querySelector('.contact-form');
+  /* Form Handling */
+  const contactForm = document.getElementById('contactForm');
   if (contactForm) {
     contactForm.addEventListener('submit', function (e) {
+      e.preventDefault();
+
       const subjectInput = this.querySelector('input[name="subject"]');
       const bodyInput = this.querySelector('textarea[name="body"]');
 
@@ -225,8 +227,15 @@ document.addEventListener("DOMContentLoaded", () => {
         highlightError(bodyInput, 'Please enter your message');
       }
 
-      if (!isValid) {
-        e.preventDefault();
+      if (isValid) {
+        // Construct mailto link
+        const recipient = 'akramfareed.m@gmail.com';
+        const subject = encodeURIComponent(subjectInput.value.trim());
+        const body = encodeURIComponent(bodyInput.value.trim());
+        const mailtoUrl = `mailto:${recipient}?subject=${subject}&body=${body}`;
+
+        // Redirect to mailto URL
+        window.location.href = mailtoUrl;
       }
     });
 
